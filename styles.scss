@@ -34,7 +34,7 @@ body {
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	width: 30%;
+	width: 35%;
 	height: auto;
 	background-color: white;
 	border-radius: 15px;
@@ -161,4 +161,28 @@ body {
 		color: black;
 	}
 
+}
+
+
+@media (max-width: 1160px) {
+
+	#main-container {
+		width: 60%;
+	}
+
+}
+
+@media (max-width: 650px) {
+
+	#main-container {
+		width: 90%;
+	}
+
+	#plan-img {
+		margin: 15px;
+	}
+
+	#svg-bg-layout {
+		background-image: url('./assets/pattern-background-mobile.svg');
+	}
 }
