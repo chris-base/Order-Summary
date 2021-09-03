@@ -1,14 +1,164 @@
 @import 'colors';
 
-body {
-	margin: auto;
+html {
 	background-color: $pale-blue;
+	font-family: 'Red Hat Display';
 }
 
 #svg-bg-layout {
-	display: flex;
 	width: 100vw;
 	height: 437px;
+	position: fixed;
+	z-index: -1;
+	top: 0;
 	margin: auto;
 	background-image: url('./assets/pattern-background-desktop.svg');
+}
+
+body {
+	margin: auto;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+
+	p {
+		font-size: 16px;
+	}
+}
+
+#main-container {
+	margin: auto;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	height: auto;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px $desaturated-blue;
+}
+
+#hero-img-container {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+#hero-img {
+	min-width: 100%;
+	max-width: 100%;
+	border-radius: 15px 15px 0 0;
+	margin-bottom: 0;
+}
+
+#order-summary-title-description-container {
+	display: flex;
+	justify-content: center;
+	margin: 30px auto 10px auto;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	width: 70%;
+}
+
+#order-summary-title-text {
+	font-weight: 900;
+	margin: 0;
+}
+
+#order-summary-description-text {
+	font-weight: 500;
+	color: #8a8a8a;
+	margin-bottom: 0;
+}
+
+#plan-container {
+	background-color: $very-pale-blue;
+	margin: 15px auto;
+	display: flex;
+	width: 70%;
+	height: 70%;
+	border-radius: 15px;
+}
+
+#plan-img {
+	margin: 25px 25px 25px 25px;
+	background-color: $pale-blue;
+	border-radius: 30px;
+}
+
+#plan-text-container {
+	display: grid;
+	margin: auto;
+	margin-left: 0px;
+}
+
+#plan-title-text {
+	font-weight: 700;
+	margin: auto;
+}
+
+#plan-pricing-text {
+	margin: auto;
+	color: #8a8a8a;
+}
+
+#plan-link-container {
+	margin: auto;
+	font-size: 14px;
+
+	a {
+		color: $bright-blue;
+		transition: 0.2s ease-in-out;
+
+		&:hover {
+			color: $desaturated-blue;
+			text-decoration: none;
+		}
+	}
+
+
+}
+
+#buttons-container {
+	display: grid;
+	margin: 20px auto 30px auto;
+	width: 70%;
+}
+
+#button-proceed-payment {
+	background-color: $bright-blue;
+	color: white;
+	border-radius: 10px;
+	border: 0;
+	padding: 13px;
+	cursor: pointer;
+	box-shadow: 0 5px 20px $desaturated-blue;
+
+
+	transition: 0.2s ease-in-out;
+
+	&:hover {
+		background-color: rgb(125, 118, 202);
+	}
+
+}
+
+#button-cancel-order {
+	background-color: transparent;
+	border: 0;
+	padding: 0px;
+	margin: 20px;
+	color: $desaturated-blue;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 12px;
+	transition: 0.2s ease-in-out;
+
+	&:hover {
+		color: black;
+	}
+
 }

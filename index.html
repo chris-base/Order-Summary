@@ -2,8 +2,11 @@
 <html lang="en">
 
 <link rel="icon" href="./assets/favicon-32x32.png" type="image/x-icon">
-<link rel="stylesheet" href="styles.css">
-</link>
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
 
 <head>
 	<meta charset="UTF-8">
@@ -12,24 +15,54 @@
 	<title>Order Summary</title>
 </head>
 
+<!-- background svg to overlap background -->
+<div id="svg-bg-layout"></div>
+
 <body>
-	<!-- background svg to overlap body -->
-	<div id="svg-bg-layout"></div>
 
 	<!-- creating main div to contain complete summary -->
 
 	<div id="main-container">
 
+		<!-- hero image -->
 		<div id="hero-img-container">
-			<img src=".assets/illustration-hero.svg" />
+			<img id="hero-img" src="./assets/illustration-hero.svg" />
 		</div>
 
-		<div id="order-summary-title-description">
+		<!-- sumamry title with the descriiption -->
+		<div id="order-summary-title-description-container">
+
+			<h2 id="order-summary-title-text">Order Summary</h2>
+			<p id='order-summary-description-text'>You can now listen to millions of songs, audiobooks, and
+				podcasts on any
+				device anywhere you like!</p>
 
 		</div>
 
+		<!-- container holding plan decription with change button -->
+		<div id="plan-container">
+
+			<img id='plan-img' src='./assets/icon-music.svg' />
+			<div id='plan-text-container'>
+				<p id='plan-title-text'>Annual Plan</p>
+				<p id='plan-pricing-text'>$59.99/year</p>
+			</div>
+
+			<div id='plan-link-container'>
+				<a href='#' id='plan-change-a'>Change</a>
+			</div>
+
+		</div>
+
+		<!-- container holding the payment button and cancel order button -->
+		<div id="buttons-container">
+
+			<button id='button-proceed-payment'>Proceed to Payment</button>
+
+			<button id='button-cancel-order'>Cancel Order</button>
+
+		</div>
 	</div>
-
 </body>
 
 </html>
