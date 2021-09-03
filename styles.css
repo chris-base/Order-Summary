@@ -20,6 +20,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -182,6 +186,10 @@ body p {
 
 #button-cancel-order:hover {
   color: black;
+}
+
+.attribution {
+  margin: auto;
 }
 
 @media (max-width: 1160px) {
