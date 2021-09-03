@@ -1,3 +1,14 @@
+@import 'colors';
+
 body {
+	margin: auto;
+	background-color: $pale-blue;
+}
+
+#svg-bg-layout {
+	display: flex;
+	width: 100vw;
+	height: 437px;
+	margin: auto;
 	background-image: url('./assets/pattern-background-desktop.svg');
 }

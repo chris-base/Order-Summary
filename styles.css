@@ -1,4 +1,15 @@
 body {
+  margin: auto;
+  background-color: #e0e8ff;
+}
+
+#svg-bg-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 437px;
+  margin: auto;
   background-image: url("./assets/pattern-background-desktop.svg");
 }
 /*# sourceMappingURL=styles.css.map */
